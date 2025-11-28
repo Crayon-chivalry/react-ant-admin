@@ -1,6 +1,6 @@
 import { Button } from 'antd';
 
-import styles from './index.module.scss'
+import styles from '../index.module.scss'
 
 const statusList = [
   {title: '待发货', value: 10, url: ''},

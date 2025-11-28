@@ -1,6 +1,6 @@
 import { Table } from 'antd';
 
-import styles from './index.module.scss'
+import styles from '../index.module.scss'
 
 const columns = [
   {

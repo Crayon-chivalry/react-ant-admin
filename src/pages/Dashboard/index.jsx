@@ -1,17 +1,20 @@
-import { Col, Row } from 'antd';
+import { Col, Row } from "antd";
 
-import SalesSection from './SalesSection'
-import VisitorSection from './VisitorSection'
-import OrderSection from './OrderSection'
-import HotGoodsSection from './HotGoodsSection'
-import IncomeSection from './IncomeSection'
+import {
+  SalesSection,
+  VisitorSection,
+  OrderSection,
+  HotGoodsSection,
+  IncomeSection,
+  PaymentSection,
+} from "./components";
 
 const Dashboard = () => {
   return (
     <>
       <Row gutter={16}>
         <Col span={14}>
-          <Row gutter={[0, 16]}>
+          <Row gutter={[16, 16]}>
             <Col span={24}>
               {/* 销售额 */}
               <SalesSection />
@@ -22,6 +25,10 @@ const Dashboard = () => {
             <Col span={14}>
               {/* 订单状态 */}
               <OrderSection />
+            </Col>
+            <Col span={10}>
+              {/* 支付方式 */}
+              <PaymentSection />
             </Col>
           </Row>
         </Col>
@@ -39,7 +46,7 @@ const Dashboard = () => {
         </Col>
       </Row>
     </>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 
 import * as echarts from 'echarts';
 
-import styles from "./index.module.scss";
+import styles from '../index.module.scss'
 
 const IncomeSection = () => {
   const chartRef = useRef(null);

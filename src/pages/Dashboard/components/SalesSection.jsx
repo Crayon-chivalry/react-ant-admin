@@ -1,6 +1,6 @@
 import { Statistic } from 'antd';
 
-import styles from './index.module.scss'
+import styles from '../index.module.scss'
 
 const salesList = [
   { title: '总销量', amount: 10000, bgColor: '#FFE2E5'},
