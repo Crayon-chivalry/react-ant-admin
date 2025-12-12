@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from '@/pages/MainLayout'
 import Login from '@/pages/Login'
 import Dashboard from '@/pages/Dashboard'
+import User from '@/pages/User'
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Dashboard />
+      },
+      {
+        path: '/user',
+        element: <User />
       }
     ]
   },

@@ -15,10 +15,10 @@ const OrderSection = () => {
       <div className={styles["app-card-header"]}>
         <div className={styles["app-card-title"]}>订单状态</div>
       </div>
-      <div className={styles['status']}>
+      <div className={styles['order']}>
         {statusList.map((item, index) => 
-          <div className={styles['status-item']} key={index}>
-            <img src={`/src/assets/images/order-status${index+1}.png`} className={styles['status-icon']} />
+          <div className={styles['order-item']} key={index}>
+            <img src={`/src/assets/images/order-status${index+1}.png`} className={styles['order-icon']} />
             <div>{ item.title }</div>
             <div>{ item.value }</div>
             <Button color="primary" variant="outlined" size='small'>
